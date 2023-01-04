@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "ce09e4b8-5bbc-4f9a-817c-6f1a4347de07",
+		"name": "training-jwt-nodejs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5520061"
+	},
+	"item": [
+		{
+			"name": "generateToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7001/api/v1/generateToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"api",
+						"v1",
+						"generateToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getData",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiV2VkIEphbiAwNCAyMDIzIDE3OjIyOjM5IEdNVCswNzAwIChXZXN0ZXJuIEluZG9uZXNpYSBUaW1lKSIsInVzZXJJZCI6MTIsImlhdCI6MTY3MjgyNzc1OX0.RGz57vA2mTDfVs2r5NZ4c8ZwmK6sieM4848y-QohRDk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "aziz_token_header_key",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiV2VkIEphbiAwNCAyMDIzIDE3OjIyOjM5IEdNVCswNzAwIChXZXN0ZXJuIEluZG9uZXNpYSBUaW1lKSIsInVzZXJJZCI6MTIsImlhdCI6MTY3MjgyNzc1OX0.RGz57vA2mTDfVs2r5NZ4c8ZwmK6sieM4848y-QohRDk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:7001/api/v1/getData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"api",
+						"v1",
+						"getData"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
